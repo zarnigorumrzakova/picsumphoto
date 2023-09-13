@@ -1,16 +1,4 @@
 # picsumphoto
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/zarnigorumrzakova/picsumphoto/assets/139987349/4c15e55c-11a9-4f3a-a674-82b64e379ef2">,
+<img src="https://github.com/zarnigorumrzakova/picsumphoto/assets/139987349/6729dc53-fcda-41aa-92b1-7a0f67efa8e5">
