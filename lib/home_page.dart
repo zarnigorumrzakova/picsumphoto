@@ -3,9 +3,10 @@ import 'dart:convert';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:pull_to_refresh/pull_to_refresh.dart';
+
 import 'details_page.dart';
 import 'photo.dart';
-import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -98,14 +99,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator(color: Colors.red,))
+          ? const Center(child: CircularProgressIndicator())
           : SmartRefresher(
         controller: _refreshController,
         enablePullUp: true,
         onLoading: _moreFetchPhotos,
         onRefresh: _refreshPhotos,
         child: ListView.builder(
-            padding: const EdgeInsets.symmetric(vertical: 30),
             itemCount: _photos.length,
             controller: _scrollController,
             itemBuilder: (context, index) {
@@ -120,9 +120,7 @@ class _HomePageState extends State<HomePage> {
                 child: Container(
                   margin: const EdgeInsets.symmetric(
                       horizontal: 10, vertical: 6),
-                  padding: const EdgeInsets.only(
-                    bottom: 10,
-                  ),
+                  padding: const EdgeInsets.only(bottom: 10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.red,
@@ -169,7 +167,7 @@ class _HomePageState extends State<HomePage> {
         },
         backgroundColor: Colors.red,
         child: const Icon(
-          Icons.upgrade,
+          Icons.keyboard_arrow_up,
           size: 40,
         ),
       )

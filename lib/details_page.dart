@@ -1,7 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'photo.dart';
+
 import 'package:url_launcher/url_launcher.dart';
+
+import 'photo.dart';
 
 class DetailsPage extends StatefulWidget {
   final Photo photo;
